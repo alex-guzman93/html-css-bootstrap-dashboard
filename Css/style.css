@@ -1,0 +1,7 @@
+img {
+    width: 3rem;
+}
+input::placeholder {
+    color: rgba(75, 74, 74, 0.61) !important;
+}
+

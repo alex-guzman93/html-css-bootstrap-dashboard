@@ -15,51 +15,143 @@
     <!--navbar -->
     <header> </header>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./img/duck.png" alt="logopapera"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Anagrafica Utenti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#"> Storico Prestiti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Help</a>
+                    </li>
 
-
-
-
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control text-dark bg-light me-2" type="search" placeholder="cerca..."
+                        aria-label="Search" />
+                    <button class="btn btn-outline-light" type="submit">cerca</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
 
     <!-- 1 sezione  titolo+button -->
-    <div class="content"></div>
-    <!-- 2 sezione contenuto + tabelle -->
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h2>Catalogo Libri</h2>
+            </div>
+            <div class="col-6 text-end"><button class="btn btn-primary" type="submit">Aggiungi Libro</button></div>
+        </div>
+        <!-- 2 sezione contenuto + tabelle -->
+        <div class="row">
+            <div class="col">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Titolo</th>
+                           <th scope="col " class="d-none d-sm-table-cell">Data prestito</th>
+                            <th scope="col">Stato</th>
+                            <th scope="col">Azioni</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            
+                            <td>I pilastri della terra</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td>Disponibile</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                          
+                            <td>I promessi sposi</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td>Disponibile</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            
+                            <td>Il signore degli anelli</td>
+                            <td class="d-none d-sm-table-cell">18/10/2023</td>
+                            <td>In prestito</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            
+                            <td>Harry Potter e la pietra filosofale</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td>Disponibile</td>
+                            <td></td>
+                        </tr><tr>
+                            
+                            <td>Il codice Da Vinci</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td>Non Disponibile</td>
+                            <td></td>
+                        </tr><tr>
+                            
+                            <td>Shining</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td>Disponibile</td>
+                            <td></td>
+                        </tr><tr>
+                            
+                            <td>La divina commedia</td>
+                            <td class="d-none d-sm-table-cell">21/09/2023</td>
+                            <td>In prestito</td>
+                            <td></td>
+                        </tr><tr>
+                            
+                            <td>Il trono di spade</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td>Disponibile</td>
+                            <td></td>
+                            <tr>
+                            
+                            <td>Il mondo di sofia</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td>Non Disponibile</td>
+                            <td></td>
+                        </tr><tr>
+                            <td>Le cronache di Narnia: il leone,la strega e l'armadio</td>
+                            <td class="d-none d-sm-table-cell">25/07/2023</td>
+                            <td>In prestito</td>
+                            <td></td>
+                        </tr><tr>
+                            <td>Il piccolo principe</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td>Disponibile</td>
+                            <td></td>
+                        </tr><tr>
+                            <td>La storia infinita</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td>Disponibile</td>
+                            <td></td>
+                        </tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- 3 sezione -->
 
